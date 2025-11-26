@@ -99,7 +99,7 @@ export function FocusCards({ cards, texto }) {
 
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-2 max-w-5xl mx-auto md:px-8 w-full h-full mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-2 max-w-5xl mx-auto md:px-8 w-full h-full pt-10">
         {cards.map((card, index) => (
           <Card
             key={card.index}

@@ -23,8 +23,8 @@ const Invitacion = () => {
 
   const targetDate = new Date("2026-01-10T21:00:00-03:00");
 
-  const colorPrincipal = "#f9a8d4";
-  const colorSecundario = "#f9a8d4";
+  const colorPrincipal = "#dc2626";
+  const colorSecundario = "#ef4444";
 
 
   return (
@@ -72,16 +72,16 @@ const Invitacion = () => {
       </div>
 
       <div>
-        <section className="relative bg-gradient-to-b from-white via-pink-50 to-white py-16 px-6 border-b-4 border-pink-100">
+        <section className="relative bg-gradient-to-b from-white via-red-50 to-white py-16 px-6 border-b-4 border-red-100">
           <div className="max-w-3xl mx-auto" data-aos="fade-up">
-            <div className="relative bg-white rounded-3xl shadow-2xl p-8 md:p-12 border-4 border-pink-200">
+            <div className="relative bg-white rounded-3xl shadow-2xl p-8 md:p-12 border-4 border-red-200">
               {/* Decoración de corona en la parte superior */}
               <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
                 <div className="text-6xl">👑</div>
               </div>
 
               <div className="relative text-center space-y-4 pt-6">
-                <p className="text-2xl md:text-3xl font-bold text-pink-400 italic mb-4">15 años...</p>
+                <p className="text-2xl md:text-3xl font-bold text-red-500 italic mb-4">15 años...</p>
                 
                 <div className="space-y-3 text-gray-700 leading-relaxed">
                   <p className="text-lg italic">es pasar de la niñez a la adolescencia,</p>
@@ -93,8 +93,8 @@ const Invitacion = () => {
                 </div>
 
                 <div className="pt-6 space-y-2">
-                  <p className="text-3xl md:text-4xl font-bold text-pink-500 italic">Mis 15 años</p>
-                  <p className="text-5xl md:text-6xl font-bold text-pink-400 italic">Pili</p>
+                  <p className="text-3xl md:text-4xl font-bold text-red-600 italic">Mis 15 años</p>
+                  <p className="text-5xl md:text-6xl font-bold text-red-500 italic">Pili</p>
                 </div>
               </div>
               
@@ -104,18 +104,18 @@ const Invitacion = () => {
 
         <section
           id="contador"
-          className="bg-white py-10 border-y-4 border-pink-100 text-center"
+          className="bg-white py-10 border-y-4 border-red-100 text-center"
         >
           <p className="text-xl tracking-wider font-light py-5">10 de Enero de 2026</p>
-          <PastelCountdown targetDate={targetDate} bgColor="bg-pink-100"/>
+          <PastelCountdown targetDate={targetDate} bgColor="bg-red-100"/>
         </section>
 
         <section id="lugares" className="relative text-center bg-white py-16 px-6">
           <div className="max-w-4xl mx-auto">
             {/* Título de la sección */}
             <div data-aos="fade-up" className="mb-12">
-              <h2 className="text-4xl md:text-5xl font-light text-pink-400 tracking-wide mb-2">Información</h2>
-              <div className="w-24 h-1 bg-pink-300 mx-auto rounded-full"></div>
+              <h2 className="text-4xl md:text-5xl font-light text-red-500 tracking-wide mb-2">Información</h2>
+              <div className="w-24 h-1 bg-red-400 mx-auto rounded-full"></div>
             </div>
 
             {/* Cards de ceremonia y fiesta */}
@@ -129,18 +129,18 @@ const Invitacion = () => {
               </div> */}
 
               {/* Card Fiesta */}
-              <div data-aos="fade-up" data-aos-delay="200" className="bg-gradient-to-br from-pink-50 to-white rounded-2xl p-8 shadow-lg border border-pink-100 hover:shadow-xl transition-shadow max-w-md w-full">
+              <div data-aos="fade-up" data-aos-delay="200" className="bg-gradient-to-br from-red-50 to-white rounded-2xl p-8 shadow-lg border border-red-100 hover:shadow-xl transition-shadow max-w-md w-full">
                 <div className="text-4xl mb-4">🎉</div>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4">Fiesta</h3>
                 <p className="text-lg text-gray-600 mb-2">La Vieja Casona Tigre</p>
-                <p className="text-xl font-bold text-pink-400">21:00 - 04:30 hs</p>
+                <p className="text-xl font-bold text-red-500">21:00 - 04:30 hs</p>
               </div>
             </div>
 
             {/* Botón cómo llegar */}
             <div data-aos="fade-up" data-aos-delay="300">
               <a href="https://maps.app.goo.gl/T4dZtLkP8bZ4GP886" target="_blank" rel="noopener noreferrer">
-                <button className="inline-flex items-center gap-2 bg-pink-400 text-white py-4 px-10 rounded-full font-semibold hover:bg-pink-500 transition-all hover:scale-105 shadow-md">
+                <button className="inline-flex items-center gap-2 bg-red-500 text-white py-4 px-10 rounded-full font-semibold hover:bg-red-600 transition-all hover:scale-105 shadow-md">
                   <span>📍</span>
                   CÓMO LLEGAR
                 </button>
@@ -188,10 +188,10 @@ const Invitacion = () => {
           </section>
         </div>
 
-        <div className="bg-pink-300 text-center relative text-white">
+        <div className="bg-[#dc2626] text-center relative text-white">
           <GoogleCalendarButton
-            imgClass="text-pink-300"
-            buttonClass="rounded-full hover:shadow-lg border-pink-300 bg-white text-gray-900"
+            imgClass="text-red-400"
+            buttonClass="rounded-full hover:shadow-lg border-red-400 bg-white text-gray-900"
             titleCalendar="XV de Pili"
             salon="La Vieja Casona de Tigre, 25 de Mayo 1810, B1648 Tigre, Provincia de Buenos Aires"
             fechaComienzo="20260110T210000"
@@ -205,19 +205,19 @@ const Invitacion = () => {
 
 
         <DatosBancarios
-          claseIcon="text-pink-600"
+          claseIcon="text-red-600"
           texto="Si deseas hacerme un regalo, te dejo los datos"
-          claseContenedor="bg-pink-100 text-gray-600"
-          claseBoton="rounded-full hover:shadow-lg border-pink-300 bg-gray-100 text-gray-900"
+          claseContenedor="bg-red-100 text-gray-600"
+          claseBoton="rounded-full hover:shadow-lg border-red-300 bg-gray-100 text-gray-900"
           textSize="text-lg"
           background={{ backgroundColor: colorPrincipal }}
           styleBotonModal={{
             backgroundColor: "white",
-            borderColor: "#f9a8d4",
+            borderColor: "#dc2626",
           }}
           claseBotonModal={{
             backgroundColor: colorPrincipal,
-            borderColor: "#f9a8d4",
+            borderColor: "#dc2626",
           }}
           styleModal={{ backgroundColor: colorSecundario }}
           styleBorderModal={{ borderColor: colorPrincipal }}
@@ -226,15 +226,15 @@ const Invitacion = () => {
           alias="lucia.lopez555"
           banco="Mercado Pago"
           nombre="Lucia Paola Lopez"
-          claseModal="bg-pink-200"
-          borderModal="border-pink-200"
-          textColor="text-pink-300"
+          claseModal="bg-red-200"
+          borderModal="border-red-200"
+          textColor="text-red-400"
         />
 
         <Asistencia
-          clase="py-10 bg-white bg-fixed border-b-4 border-pink-100"
-          claseTitle="text-pink-300"
-          claseButton="border-2 border-pink-200 font-semibold text-gray-700 rounded-full"
+          clase="py-10 bg-white bg-fixed border-b-4 border-red-100"
+          claseTitle="text-red-400"
+          claseButton="border-2 border-red-300 font-semibold text-gray-700 rounded-full"
           linkAsistencia="https://wa.me/5491156093494?text=Hola!%20Quiero%20confirmar%20mi%20asistencia%20a%20los%20XV%20de%20Pili"
         />
 
